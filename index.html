@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip a coin</title>
+    <style>
+      header {
+        margin-left: 40%;
+        font-size: 50px;
+      }
+      .coins {
+        /* position: absolute; */
+        width: 100px;
+        height: 100px;
+        padding: 50px;
+        /* font-style: normal; */
+        /* font-weight: 200; */
+        font-size: 20px;
+        /* line-height: 50px; */
+        /* position: absolute; */
+
+        background: linear-gradient(
+          180deg,
+          #fffbf7 0%,
+          rgba(255, 16, 159, 0) 100%
+        );
+        border: 5px solid #000000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 5000px;
+        animation-duration: 300ms;
+        animation-name: lord;
+        margin-left: 45%;
+      }
+      .lord2{
+            font-size: 40px;
+      }
+
+      p {
+        animation-duration: 3s;
+        animation-name: lord;
+      }
+      body {
+        background: #a4ddea;
+      }
+
+      @keyframes lord {
+        from {
+          margin-left: 100%;
+        }
+
+        to {
+          margin-left: 45%;
+        }
+      }
+      .btn {
+        /* background: #a63ff5;
+        background-image: -webkit-linear-gradient(top, #a63ff5, #ebe82f);
+        background-image: -moz-linear-gradient(top, #a63ff5, #ebe82f);
+        background-image: -ms-linear-gradient(top, #a63ff5, #ebe82f);
+        background-image: -o-linear-gradient(top, #a63ff5, #ebe82f);
+        background-image: linear-gradient(to bottom, #a63ff5, #ebe82f); */
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        text-shadow: 4px 3px 0px #666666;
+        -webkit-box-shadow: 5px 4px 9px #000000;
+        -moz-box-shadow: 5px 4px 9px #000000;
+        box-shadow: 5px 4px 9px #000000;
+        font-family: Courier New;
+        color: #060000;
+        font-size: 30px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        margin-left: 50%;
+        margin-top: 350px;
+      }
+
+      .btn:hover {
+        background: #fff1f1;
+        background-image: -webkit-linear-gradient(top, #ffdcdc, #41eb12);
+        background-image: -moz-linear-gradient(top, #fc3c3c, #41eb12);
+        background-image: -ms-linear-gradient(top, #fc3c3c, #41eb12);
+        background-image: -o-linear-gradient(top, #fc3c3c, #aceb9b);
+        background-image: linear-gradient(to bottom, #fffdfd, #8cb1e9);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="lord2">Toss A Coin</h1>
+    </header>
+
+    <div class="coins" id="id1">
+      <h1>Flip</h1>
+    </div>
+
+    <button class="btn">Flip</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
